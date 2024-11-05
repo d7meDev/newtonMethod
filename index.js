@@ -87,13 +87,9 @@ form.addEventListener('submit', event => {
 
 
 form.addEventListener('reset', event => {
-     event.preventDefault();
+     
      table.textContent = "";
-     xoInput.textContent ="";
-     fxInput.textContent = ""; 
-     fPrimeInput.textContent = "";
-     itreationInput.textContent = ""; 
-     ErrorInput.textContent = "";
+    
     
 })
 
