@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <h1 id="title">Newton's Method Calculator</h1>
+    <form>
+             <div id="inputs">
+
+            <label for="xo">Enter xo:</label>
+            <input type="text" id="xoInput"  placeholder="0.43">
+
+
+            <label for="f(x)">Enter f(x):</label>
+            <input type="text" id="fxInput"  placeholder="x*x + 1">
+        
+
+        
+            <label for="f'(x)">Enter f'(x):</label>
+            <input type="text" id="fPrimeInput" placeholder="2*x + 1">
+        
+        
+        
+            <label for="itreation">Enter The Number of itreations:</label>
+            <input type="number" min="1" value="1" id="itreationInput">
+        
+
+       
+            <label for="Error">Enter The Error:</label>
+            <input type="text" placeholder="0.001" id="ErrorInput">
+        </div>
+
+            <div id="buttons">
+                <button type="submit">Calculate</button>
+                <button type="reset">reset</button>
+            </div>
+        
+        
+
+    </form>
+      
+    <div id="table">
+        <div id="headers">
+            <h1>i</h1>
+            <h1>xi</h1>
+            <h1>f(x)</h1>
+            <h1>f'(x)</h1>
+            <h1>xi+1</h1>
+            <h1>|xi+1 - xi|</h1>
+        </div>
+        <div class="row">
+            <p>1</p>
+            <p>1.5</p>
+            <p>2.25</p>
+            <p>0.75</p>
+            <p>2.25</p>
+            <p>0.75</p>
+        </div>
+        <div class="row">
+            <p>2</p>
+            <p>2.25</p>
+            <p>5.06</p>
+            <p>1.25</p>
+            <p>3.00</p>
+            <p>0.75</p>
+        </div>
+        <div class="row">
+            <p>3</p>
+            <p>3.00</p>
+            <p>9.00</p>
+            <p>1.75</p>
+            <p>4.00</p>
+            <p>1.00</p>
+        </div>
+        <div class="row">
+            <p>4</p>
+            <p>4.00</p>
+            <p>16.00</p>
+            <p>2.25</p>
+            <p>5.25</p>
+            <p>1.25</p>
+        </div>
+        <div class="row">
+            <p>5</p>
+            <p>5.25</p>
+            <p>27.56</p>
+            <p>2.75</p>
+            <p>7.00</p>
+            <p>1.75</p>
+        </div>
+    </div>
+    
+     
+</body>
+</html>

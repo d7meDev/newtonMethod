@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: hsl(0, 0%, 80%);
+}
+
+#title{
+    text-align: center;
+    padding: 1rem;
+    font-size: 5rem;
+    border-bottom: 1rem solid rgb(68, 68, 68);
+    
+    
+}
+form{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+form #inputs{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    column-gap: 1rem;
+    flex-wrap: nowrap;
+    font-size: 1.3rem;
+    text-wrap: nowrap;
+    font-weight: bold;
+
+}
+
+form #inputs input{
+    text-align: center;
+    font-size: 1rem;
+}
+form #buttons{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+form #buttons button{
+    font-size: 1.5rem;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    
+}
+
+form #buttons button[type = "submit"]{
+   background-color: rgb(153, 255, 0);
+   border-right: 1px;
+    
+}
+form #buttons button[type = "reset"]{
+   background-color: red;
+   
+    
+}
+
+#table {
+
+    width: 80%;
+    margin: 1rem auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+#headers, .row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 10px;
+    text-align: center;
+}
+
+#headers {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+}
+
+.row {
+    border-bottom: 1px solid #ddd;
+}
+
+.row:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.row p {
+    margin: 0;
+}
+
+.row:hover {
+    background-color: #f1f1f1;
+}
+
+#headers h1, .row p {
+    padding: 8px;
+    margin: 0;
+}
